@@ -38,7 +38,7 @@ export default function Products() {
     const fetchProducts = async () => {
       const res = await axios.get(`${API_PATHS.product}/products`);
 
-      return res.data;
+      return res.data.productList;
     }
 
     fetchProducts()
